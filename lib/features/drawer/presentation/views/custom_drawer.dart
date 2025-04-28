@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:reading_tracker/core/helpers/assets.dart';
 import 'package:reading_tracker/core/themes/text_themes.dart';
 import 'package:reading_tracker/features/books/presentation/views/all_books_screens.dart';
 import 'package:reading_tracker/features/books/presentation/views/reading_now_view.dart';
@@ -41,18 +42,18 @@ class _CustomDrawerState extends State<CustomDrawer> {
     return Scaffold(
       key: scaffoldKey,
       appBar: AppBar(
-        leadingWidth: 50,
+        leadingWidth: 47,
         leading: IconButton(
           onPressed: () => scaffoldKey.currentState!.openDrawer(),
           icon: Icon(
             Icons.menu_rounded,
-            size: 28,
+            size: 26,
           ),
         ),
         iconTheme: IconThemeData(),
         title: Text(
           titles[selectedIndex],
-          style: AppTextStyles.font20Regular,
+          style: AppTextStyles.font18Regular,
         ),
       ),
       drawer: Drawer(
@@ -63,14 +64,15 @@ class _CustomDrawerState extends State<CustomDrawer> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    FontAwesomeIcons.book,
-                    size: 32,
+                  Image.asset(
+                    fit: BoxFit.contain,
+                    Assets.imagesBookIcon3,
+                    height: 80,
                   ),
-                  SizedBox(height: 15),
+                  SizedBox(height: 10),
                   Text(
                     'Readon',
-                    style: AppTextStyles.font18Regular,
+                    style: AppTextStyles.font20Regular,
                   ),
                 ],
               ),
