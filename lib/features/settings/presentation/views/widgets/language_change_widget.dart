@@ -2,10 +2,16 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:reading_tracker/core/helpers/exentions.dart';
 import 'package:reading_tracker/core/themes/text_themes.dart';
+import 'package:reading_tracker/generated/locale_keys.g.dart';
 
-class LanguageChangeWidget extends StatelessWidget {
+class LanguageChangeWidget extends StatefulWidget {
   const LanguageChangeWidget({super.key});
 
+  @override
+  State<LanguageChangeWidget> createState() => _LanguageChangeWidgetState();
+}
+
+class _LanguageChangeWidgetState extends State<LanguageChangeWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -22,7 +28,7 @@ class LanguageChangeWidget extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'language'.tr(),
+                      LocaleKeys.language.tr(),
                       style: AppTextStyles.font20Regular,
                     ),
                     ListTile(

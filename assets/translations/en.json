@@ -1,3 +1,4 @@
+
 {
 
     "all_books":"All Books",
@@ -8,7 +9,7 @@
        "arabic":"Arabic",
        "english":"English",
        "language": "Language",
-       "Change Language":"Change Language",
+       "changel_anguage":"Change Language",
        "system_language":"System Language",
        "system":"System",
        "dark":"Dark",

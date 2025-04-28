@@ -1,7 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import 'package:reading_tracker/features/settings/presentation/views/widgets/language_change_widget.dart';
 import 'package:reading_tracker/features/settings/presentation/views/widgets/theme_selection_widget.dart';
+import 'package:reading_tracker/generated/locale_keys.g.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -9,6 +11,11 @@ class SettingsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          LocaleKeys.settings.tr(),
+        ),
+      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
@@ -16,9 +23,7 @@ class SettingsScreen extends StatelessWidget {
           children: [
             SizedBox(height: 5),
             ThemeSelectionWidget(),
-            Builder(builder: (context) {
-              return LanguageChangeWidget();
-            }),
+            LanguageChangeWidget(),
           ],
         ),
       ),
