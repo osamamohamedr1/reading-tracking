@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:reading_tracker/core/routing/app_router.dart';
 import 'package:reading_tracker/core/themes/app_themes.dart';
-import 'package:reading_tracker/features/home/logic/cubit/theme_cubit.dart';
-import 'package:reading_tracker/features/home/presentation/views/home_view.dart';
+import 'package:reading_tracker/features/drawer/logic/cubit/theme_cubit.dart';
+import 'package:reading_tracker/features/drawer/presentation/views/custom_drawer.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ReadingTracker extends StatelessWidget {
@@ -20,7 +20,7 @@ class ReadingTracker extends StatelessWidget {
             darkTheme: AppThemes.darkTheme,
             themeMode: theme,
             onGenerateRoute: appRouter.generateRoute,
-            home: HomeView(),
+            home: CustomDrawer(),
           );
         },
       ),

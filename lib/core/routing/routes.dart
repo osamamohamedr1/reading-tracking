@@ -4,4 +4,5 @@ abstract class Routes {
   static const String onReading = 'onReading';
   static const String favorite = 'favorite';
   static const String toRead = 'toRead';
+  static const String settings = 'settings';
 }

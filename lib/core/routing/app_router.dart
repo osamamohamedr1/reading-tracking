@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:reading_tracker/core/routing/routes.dart';
-import 'package:reading_tracker/features/books/presentation/views/books_view.dart';
+import 'package:reading_tracker/features/books/presentation/views/all_books_screens.dart';
 import 'package:reading_tracker/features/onboarding/presentation/views/onboarding_view.dart';
+import 'package:reading_tracker/features/settings/presentation/views/settings_view.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
@@ -13,7 +14,12 @@ class AppRouter {
 
       case Routes.allBoks:
         return MaterialPageRoute(
-          builder: (context) => BooksView(),
+          builder: (context) => AllBooksScreen(),
+        );
+
+      case Routes.settings:
+        return MaterialPageRoute(
+          builder: (context) => SettingsScreen(),
         );
 
       default:
