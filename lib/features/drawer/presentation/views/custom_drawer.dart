@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:reading_tracker/core/helpers/assets.dart';
@@ -78,17 +79,21 @@ class _CustomDrawerState extends State<CustomDrawer> {
               ),
             ),
             buildDrawerItem(
-                icon: FontAwesomeIcons.book, label: 'All Books', index: 0),
+                icon: FontAwesomeIcons.book, label: 'all_books'.tr(), index: 0),
             buildDrawerItem(
                 icon: FontAwesomeIcons.bookOpenReader,
-                label: 'Reading Now',
+                label: 'reading_now'.tr(),
                 index: 1),
             buildDrawerItem(
-                icon: FontAwesomeIcons.solidHeart, label: 'Favorite', index: 2),
+                icon: FontAwesomeIcons.solidHeart,
+                label: 'favorite'.tr(),
+                index: 2),
             buildDrawerItem(
-                icon: FontAwesomeIcons.quoteRight, label: 'Quotes', index: 3),
+                icon: FontAwesomeIcons.quoteRight,
+                label: 'quotes'.tr(),
+                index: 3),
             buildDrawerItem(
-                icon: FontAwesomeIcons.gear, label: 'Settings', index: 4),
+                icon: FontAwesomeIcons.gear, label: 'settings'.tr(), index: 4),
           ],
         ),
       ),

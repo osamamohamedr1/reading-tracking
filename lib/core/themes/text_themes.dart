@@ -13,6 +13,10 @@ abstract class AppTextStyles {
     fontSize: 18,
     fontWeight: FontWeight.normal,
   );
+  static final font14Regular = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.normal,
+  );
   static final font20Regular = TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.normal,
