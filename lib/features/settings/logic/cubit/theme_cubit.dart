@@ -39,13 +39,13 @@ class ThemeCubit extends Cubit<ThemeMode> {
     );
   }
 
-  void toggleTheme() {
-    final newTheme =
-        state == ThemeMode.light ? ThemeMode.dark : ThemeMode.light;
-    emit(newTheme);
-    // await CacheHelper.saveData(
-    //   key: themeModeKey,
-    //   value: newTheme == ThemeMode.light ? 'light' : 'dark',
-    // );
-  }
+  // void toggleTheme() {
+  //   final newTheme =
+  //       state == ThemeMode.light ? ThemeMode.dark : ThemeMode.light;
+  //   emit(newTheme);
+  //   // await CacheHelper.saveData(
+  //   //   key: themeModeKey,
+  //   //   value: newTheme == ThemeMode.light ? 'light' : 'dark',
+  //   // );
+  // }
 }

@@ -1,0 +1,2 @@
+D:/Programming/flutter projects/reading_tracker/android/app/.cxx/Debug/5d70265h/x86/CMakeFiles/edit_cache.dir
+D:/Programming/flutter projects/reading_tracker/android/app/.cxx/Debug/5d70265h/x86/CMakeFiles/rebuild_cache.dir

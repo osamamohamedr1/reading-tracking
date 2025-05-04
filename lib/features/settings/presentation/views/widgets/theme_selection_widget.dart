@@ -12,6 +12,7 @@ class ThemeSelectionWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     var currentThemeMode = context.watch<ThemeCubit>().state;
     return ExpansionTile(
+      minTileHeight: 60,
       title: Text(LocaleKeys.theme.tr()),
       shape: tileShape(borderColor: Colors.lightBlueAccent),
       collapsedShape: tileShape(),

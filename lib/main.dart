@@ -11,7 +11,7 @@ void main() async {
   runApp(
     EasyLocalization(
       path: 'assets/translations',
-      supportedLocales: [Locale('en'), Locale('ar')],
+      supportedLocales: [Locale('en'), Locale('ar'),],
       fallbackLocale: Locale('en'),
       child: ReadingTracker(
         appRouter: AppRouter(),
